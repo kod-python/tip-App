@@ -58,21 +58,22 @@
 
     else{
         console.log(numberOf)
-    };
+    }; alert(meal.value)
 
 
     
 
-    if(meal.options){
-        console.log(meal)
-    }
-
-    else{
-        alert("please select meal type")
-    }
 
 
-    let final = calculate.innerHtml = `${calculate}`
-     console.log(final)
+   let meal = document.querySelector("#mealType")
+   
+   event.preventDefault();
+   alert(meal.value)
+
+    
+
+    document.getElementById("tipAmount").innerHTML = `bill amount is ${billAm} and tip ${customTip}. Number of people:${numberOf}. Meal type:${meal} `
+  
+    
 }
 
