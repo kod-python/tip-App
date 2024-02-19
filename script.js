@@ -4,7 +4,7 @@
     let billAm = document.getElementById("billAmount").value
 
     if(!billAm){
-        alert("input number")
+        alert("input bill amount")
     }
 
     else{
@@ -12,41 +12,48 @@
     };
 
 
-    let cust = document.getElementById("serviceRating").value
+    // let cust = document.getElementById("customerTip").value
 
-    if (cust.cheked) {
-        console.log(cust)
+    if (document.getElementById("customerTip").checked == true && document.getElementById("serviceRating").checked == false) {
+        alert("custom checked")
     }
 
-   else{
-    alert("please check your button")
-   };
-
-
-   let serv = document.getElementById("serviceRating").value
-
-   if (serv.cheked) {
-       console.log(serv)
+   else if (document.getElementById("serviceRating").checked == true && document.getElementById("customerTip").checked == false){
+    alert("servce rating checked")
    }
 
-  else{
-   alert("please check your button")
-  };
+    
+   else{
+    alert("plesase choose type of tip")
+   }
+
+// //    let serv = document.getElementById("serviceRating").value
+
+//    if (document.getElementById("")) {
+//     alert("service checked")
+//    }
+
+//   else{
+//       alert("check service rating")
+//   };
 
 
 
     let customTip = document.getElementById("customerTipAmount").value
     if(!customTip){
-        alert("input number")
+       
+        alert("please enter customer tip number")
     }
-
+    
     else{
         console.log(customTip)
-    };
+    }
+
+    
 
     let numberOf = document.getElementById("splitCount").value
     if(!splitCount){
-        alert("input number")
+        alert("input number of people")
     }
 
     else{
@@ -54,9 +61,9 @@
     };
 
 
-    let meal = document.getElementById("mealType").value
+    
 
-    if(meal.select){
+    if(meal.options){
         console.log(meal)
     }
 
@@ -65,8 +72,7 @@
     }
 
 
-    let final = calculate.innerHTml = `${calculate}`
-
-    console.log(final)
+    let final = calculate.innerHtml = `${calculate}`
+     console.log(final)
 }
 
